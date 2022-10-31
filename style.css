@@ -2,7 +2,64 @@
 
 body {
     margin: 0;
-    padding: 5rem;
+    padding: 0 20rem;
     overflow: hidden;
     font-family: 'Manrope', sans-serif;
+    background: blueviolet;
+    color: wheat;
+    text-align: center;
+}
+
+.about {
+    padding: 40px 0;
+}
+h1 {
+    font-size: 36px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 24px;
+}
+
+label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+#dateOfBirth, #luckyNumber {
+    width: 20vw;
+    height: 5vh;
+    padding: .5rem;
+    font-size: 1.17rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    border-radius: .2rem;
+}
+
+#checkButton {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    padding: 1rem 8rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    background: white;
+}
+#checkButton:hover {
+    background: rgb(217, 217, 217);
+}
+
+.outputs {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 36px;
+    font-weight: 600;
 }
