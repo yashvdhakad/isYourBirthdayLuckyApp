@@ -16,7 +16,7 @@ function compareValues(sum) {
   if (sum % luckyNumber.value === 0) {
     outputBox.innerText = "This is lucky!"
 } else {
-    outputBox.innerText = "You is not lucky!"
+    outputBox.innerText = "This is not lucky!"
   }
 }
 
