@@ -14,9 +14,9 @@ function calculateSum(dob) {
 
 function compareValues(sum) {
   if (sum % luckyNumber.value === 0) {
-    outputBox.innerText = "You are lucky!"
+    outputBox.innerText = "This is lucky!"
 } else {
-    outputBox.innerText = "You ain't lucky!"
+    outputBox.innerText = "You is not lucky!"
   }
 }
 
