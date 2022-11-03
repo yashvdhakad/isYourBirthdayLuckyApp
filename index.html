@@ -6,25 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is Your B'day Lucky?</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="font-['Manrope'] scroll-smooth bg-red-400 text-red-100 lg:px-80 px-6">
+    <header>
+        <nav class="py-6 flex justify-between items-center font-bold">
+            <p class="text-2xl lg:text-3xl">🥳</p>
+            <a href="https://yashvdhakad.netlify.app/projects.html" target="_blank">All Projects</a>
+            <a href="https://yashvdhakad.netlify.app/contact.html" target="_blank">Contact</a>
+        </nav>
+    </header>
+    <hr class="opacity-20">
     <main>
-        <section class="about">
-            <h1>Is Your Birthday Lucky?</h1>
-        </section>
-        <section class="inputs">
+        <h1 class="lg:text-5xl lg:py-20 py-10 text-4xl font-bold text-center text-red-100">Is Your Birthday Lucky?</h1>
+        <!-- inputs -->
+        <section class="text-xl font-bold flex flex-col space-y-4">
             <label for="dateOfBirth">Date of Birth</label>
-            <input id="dateOfBirth" type="date">
+            <input class="border rounded bg-transparent p-4" id="dateOfBirth" type="date">
             <label for="luckyNumber">Lucky Number</label>
-            <input id="luckyNumber" type="text">
-            <button id="checkButton">Check</button>
+            <input class="border rounded bg-transparent p-4" id="luckyNumber" type="text">
+            <!-- button -->
+            <button class="py-3 px-6 rounded bg-red-100 text-red-400 text-base font-bold" id="checkButton">Check</button>
         </section>
-        <section class="outputs">
-            <p id="outputBox"></p>
+        <!-- outputs -->
+        <section class="lg:text-4xl lg:py-20 py-10 text-3xl font-bold text-yellow-300 text-center">
+            <div id="outputBox"></div>
         </section>
     </main>
+    <hr class="opacity-20">
+    <footer class="py-6 flex flex-col space-y-4">
+        <div class="flex justify-between items-center lg:space-x-6">
+            <a href="https://github.com/yashvdhakad" class="w-10 invert"><img src="./media/github.png" alt="Github"></a>
+            <a href="https://www.instagram.com/yashvdhakad" class="w-10 invert"><img src="./media/ig.png"
+                    alt="Instagram"></a>
+            <a href="https://linkedin.com/in/yashvdhakad" class="w-10 invert"><img src="./media/linkedin.png"
+                    alt="LinkedIn"></a>
+            <a href="https://twitter.com/yashvdhakad" class="w-10 invert"><img src="./media/twitter.png"
+                    alt="Twitter"></a>
+        </div>
+        <div class="text-sm font-semibold py-4 text-center">
+            &copy; Yash Dhakad ∞
+        </div>
+    </footer>
 </body>
 <script src="app.js"></script>
 
